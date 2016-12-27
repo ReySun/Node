@@ -1,0 +1,13 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS myusers;
+CREATE DATABASE myusers CHARSET=UTF8;
+USE myusers;
+/*Ô±¹¤±í*/
+CREATE TABLE user(
+    uid INT PRIMARY KEY AUTO_INCREMENT,
+    uname VARCHAR(32),
+    upwd VARCHAR(32)
+);
+INSERT INTO user VALUES
+(NULL,'TOM','123'),
+(NULL,'Mia','123');

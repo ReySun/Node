@@ -1,0 +1,167 @@
+韩向琳
+hanxl@tedu.cn
+
+1、Node.js概述
+	Node.js是一个基于V8引擎的js运行时环境。——解释器
+	Node.js是一门服务器端语言，基于ECMAScript,提供了很多（前端的js语言中没有的）扩展对象。——服务器端语言
+	Node.js可以编写独立的web服务器，无需借助于任何其他的web服务器。——web服务器
+	Node.js和V8的区别：
+	前端Javascript：
+		（1）ES原生对象：String、Date、Number、Array、Boolean、Error、Function、Object。。。
+		（2）BOM&DOM对象：window、document。。。
+		（3）自定义对象
+	
+	Node.js：
+		（1）ES原生对象
+		（2）扩展核心对象和大量第三方对象
+		（3）自定义对象
+	Node.js中没有BOM和DOM对象
+
+	Node.js的意义：
+		（1）执行效率比PHP/JSP/ASPX都要高
+		（2）使用一种语言统一了前后端 开发
+	
+	全栈工程师
+	特点：
+	（1）单线程逻辑处理
+	（2）非阻塞	
+	（3）异步I/O处理
+	（4）事件驱动编程
+
+2、Node.js的两种运行模式
+	（1）交互模式——用于测试
+	交互模式，Node.js自带的模块无需引入，可以直接使用
+	执行方法：node 进入---输入js代码，回车执行
+	（2）脚本模式——用于开发
+	把要执行的所有js语句编写在一个js文件中，一次性提交给Node.js解释器执行。该文件可以是.js结尾的，也可以没有后缀
+	在脚本模式下，使用Node.js自带的模块，需要require()引入
+	执行方法：node xx/xx/xx.js
+
+3、Node.js的基础语法和ES6新特性
+	1、数据类型
+	（1）原始类型
+		string  number boolean null undefind
+		原始类型数据直接赋值即可
+	（2）引用类型
+		包含ES原生对象、Node.js对象、用户自定义对象
+		引用类型数据需要使用new关键字创建
+	2、模板字符串
+		使用 ` ` 方式定义字符串，数据可以实现换行，并且可以在字符串中拼接变量：${变量名}，执行运算。
+
+	3、严格模式：ES5中新增的比普通模式更加严格的js运行模式。——全新的模式。
+	使用方法：
+	规则：
+	（1）在整个脚本文件中启用严格模式
+		在脚本文件开头："use strict"
+		何时：新项目
+	（2）在单个函数内启用严格模式
+		function(){
+			"use strict"
+		}
+		何时：老项目迁移或维护
+	1、修改常量的值非法的。
+	2、不允许对未声明的变量赋值
+	3、匿名函数的this不再指向全局
+
+	4、变量的作用域
+	作用域：
+		全局作用域、
+		局部作用域、
+		块级作用域(ES6专有)
+	块级作用域：只能在当前的代码块中使用
+	代码块：任何一个{}（if/for/while）都是一个代码块，每个代码块就是一个独立的作用域
+	使用：在代码块使用let声明变量，出了代码块就不能使用。
+	5、循环结构
+		for...in...获得数组的下标
+		for...of...用于遍历数据，获得数组的元素值
+	
+	6、函数
+	匿名函数的自调用
+	箭头函数：用于匿名函数
+	()=>{
+	
+	}
+	var obj=()=>{
+	
+	}
+	7、使用class关键字创建自定义对象——ES6新特性
+	class	类，是一组相似对象的属性和行为的抽象集合
+	constructor  构造函数关键字
+	class 类名{
+		constructor(){
+		}
+		方法名(){
+		}
+	}
+
+	继承：
+	class 子类 extends 父类{
+		constructor(xx,xx,xx){
+			super(父类的属性);
+			this.xx=xx;
+		}
+		方法名(){
+			super.父类方法名()+...
+		}
+	}
+4、Node.js中全局对象的成员属性和成员方法
+	在交互模式下，声明的全局变量和函数，是global的成员——全局对象污染
+	在脚本模式下，声明的全局变量和函数，不是global的成员——避免了全局对象的污染
+	（1）console 用于向stdout（标准输出）和stderr（标准错误）中输出信息
+	console中的成员是异步的，所以输出顺序和书写顺序不一定一致。
+	console.log()	向stdout输出日志信息
+	//%百分号占位符，每一个占位符都一一对应后面的具体值，%s表示string类型，%d表示是number类型
+	console.log('uname:%s,age:%d',user.uname,user.age);
+	console.info()	使用方法和console.log()相同
+
+	console.error()	用于向stderr输出错误信息
+	console.warn()
+
+	console.trace()	用于向stderr输出栈轨迹信息
+	
+	console.dir()	用于向stdout输出指定对象的字符串表示，它与console.log()的区别：console.dir()可以带一些参数，对输出的内容进行设置。
+	console.assert()	断言，为真的断言，错误信息不回输出，为假的断言，抛出AssertError错误对象，输出错误信息，终止脚本执行。（错误信息可以自定义）
+
+	console.time()	//测试代码的执行耗时
+	console.timeEnd()
+
+	（2）process 进程
+	console.log( process.arch )//获取CPU架构类型
+	console.log( process.platform )//获取操作系统类型
+	console.log( process.env )//获取操作系统环境变量
+
+	console.log( process.cwd() )//获取当前所在工作目录
+	console.log( process.execPath )//获取解释器所在目录
+	console.log( process.versions )//获取Node.js版本信息
+	console.log( process.uptime() )//获取Node.js解释器运行时间(s)
+	console.log( process.memoryUsage())//获取内存信息
+
+	console.log( process.pid )//获取进程ID号
+	process.kill( pid )//向指定进程ID号发送退出信号
+
+	（3）定时器
+	global.setTimeout( )：一次性定时器
+	global.setInterval( )：周期性定时器
+	process.nextTick( ): 本次事件循环结束时立即执行的定时器
+	global.setImmediate( )：下次事件循环立即执行的定时器
+
+5、模块
+	Node.js中使用“模块”来规划不同的功能对象，类似其他语言中的“package(包)”或者“namespace(名称空间)”。
+	每一个.js文件对应一个模块对象，包含相应的功能和函数。
+	引入一个模块：require('');
+	导出一个模块：exports.xx=xx;
+	模块的分类
+	（1）核心模块
+	（2）第三方模块
+	（3）自定义模块
+
+
+	
+
+
+
+
+
+
+
+

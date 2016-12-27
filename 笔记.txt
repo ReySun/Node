@@ -1,0 +1,225 @@
+回顾：
+1、什么是Node.js？
+	JS的解释器
+	web服务器
+	一门后端开发语言
+2、Node.js对象
+	ECMAScript原生对象
+	Node.js内置对象
+	第三方对象
+	自定义对象
+3、Node.js的基础语法和ES6新特性
+	模板字符串：`${}`
+	严格模式："use strict"
+	        在严格模式下，不允许对未声明的变量赋值
+	        在严格模式下，修改常量的值是非法的
+	        匿名函数的this不再指向全局
+	箭头函数：=>
+	变量的作用域：
+	        全局作用域
+	        局部作用域
+	        块级作用域
+		代码块：{}
+		let声明块级作用域变量，要求在严格模式下使用
+	自定义对象：
+		class  xx{
+			contructor(){
+			}
+			work(){
+			}
+		}
+	继承：
+		class yy extends xx {
+			contructor(){
+			super(...,...)
+			}	
+		}
+		
+4、全局对象global的成员
+	在交互模式，声明的全局变量都是global的成员
+	在脚本模式下，声明全局变量不是global的成员
+	console：向stdout和stderr输出信息
+		console.log()
+		console.info()
+		console.error()
+		console.warn()
+		console.trace()
+		console.dir()
+		console.assert()
+		console.time('')
+		console.timeEnd('')
+	process
+		process.arch	//获取CPU架构类型
+		process.platform	//操作系统类型
+		process.env              //环境变量
+		process.cwd()	//当前的工作目录
+		process.execPath	//node解释器所在目录
+		process.versions	//node版本信息
+		process.uptime()	//node运行时间
+		process.memoryUsage()//内存信息
+		process.pid	//获取进程id
+		process.kill(pid)	//退出进程
+	定时器：
+		setTimeout()
+		setInterval()
+		serImmediate()//下次事件循环之前立即执行
+		process.nextTick()//当前事件循环结束之后立即执行
+
+
+
+1、模块
+	Node.js中使用“Module（模块）”来规划不同的功能对象。
+	每一个被加载的js文件对应个模块对象。
+	导出：exports
+	引入：require()
+	模块的分类：
+		（1）核心模块——Node.js的内置模块
+		（2）第三方模块
+		（3）自定义模块
+	Node.js启动时运行的第一个模块成为主模块——main module，自身模块
+	获取主模块：
+		process.mainModule
+		require.main
+	除主模块之外其他模块称为“子模块”
+	每一个模块内部都可以使用一个变量：module，指向当前模块自己
+	预定义的模块作用域成员：
+	__dirname：当前模块文件所在的目录
+	__filename：当前模块文件所在的目录及文件名
+	module：指向当前模块的引用
+	module.exports：当前模块中待导出的供其他模块使用的对象
+	exports：指向module.exports对象的引用
+	require：引入其他模块，使用其他模块的module.exports对象
+	
+	自定义模块：
+	文件模块：
+		没有后缀的文件模块，被作为js文本加载
+		.js后缀的文件模块，被作为js文本加载
+		.json后缀的文件模块，被作为json字符串加载，会自动解析为对象
+		.node后缀的文件模块，被作为C/C++二进制加载
+	目录模块：目录模块引入的时候，直接写目录名称即可
+		包含package.json文件的目录
+			package.json中要包含一个mian的属性，指向该模块的js文件
+		包含index.js文件的目录
+		包含index.json文件的目录
+		包含index.node文件的目录
+	模块的查找顺序：
+		（1）文件/目录模块的缓存
+		（2）原生模块的缓存
+		（3）原生模块
+		（4）文件/目录模块
+2、包和NPM
+	包(package)是根据CommonJS规范对模块进行的标准封装。
+	包规范：
+	-包是一个目录
+	-目录中包含一个包说明文件package.json，存放于包顶级目录下
+	-目录中包含js文件，如果有index.js可以放到包顶级目录下
+	-其他js文件应该包含在lib目录下
+	-二进制文件应该包含在bin目录下
+	-文档应该放在doc目录下
+	-单元测试应该放在test目录下
+	根据CommonJS规范要求，包应该位于当前目录或者父目录下的node_modules文件夹下，引入时由近及远进行查找。
+
+	NPM——包管理器
+	Node.js的包管理工具，用于下载、安装、升级、删除、发布、维护。
+	Node.js的安装文件中，已经集成了NPM
+	npm官网：www.npmjs.com
+	(1)安装在当前目录下
+	命令行：npm install 包名
+	会安装到指定目录的node_modules文件夹下。
+	查看目标路径：npm root
+	(2)安装在全局
+	命令行：npm install 包名 -g
+	会安装到npm目录下，在交互模式下使用，在脚本模式下不可用
+	查看目标路径：npm root -g
+	
+	卸载已经安装的包：npm uninstall 包名
+	列出已经安装的包：npm ls
+	更新已经安装的包：npm update 包名
+
+	生成：
+	在当前路径下生成package.json文件
+	命令：npm init
+	发布：
+		登录/注册：npm adduser
+		发布：npm publish
+
+3、Node.js核心模块
+(1)console
+	global.console：用于向stdout和stderr输出信息
+	console：console模块中的Console构造函数，可以向任意指定的输出流（文件）中执行输入
+	var c=require('console');
+	//参数out,err为输出流（比如某文件）
+	var logger=new c.Console(out,err);
+	logger.log('my out');
+	logger.error('my error');
+（2）querystring
+	提供了处理url中'查询字符串'部分的相关操作
+	parse()	//从查询字符串中解析出数据对象，此方法的参数是一个查询字符串
+	stringify()//将数据对象转换为查询字符串格式，此方法有三个参数，第一个参数时数据对象，第二个参数设置每组键值对之间的分隔符，第三个参数设置键和值之间的分隔符
+（3）url
+	提供了处理url中不同部分的相关操作
+	parse()	//解析出url中的各个部分，第一个参数，url；第二个参数如果为true，将查询字符串部分直接解析成对象
+	format()	//将对象反向格式化为url格式，参数为对象
+	resolve(url1,url2)//根据基地址解析出相对url
+（4）path
+	提供了对文件路径进行操作的相关方法
+	parse('path')	//解析路径字符串
+	format('obj')	//将路径对象格式化为字符串
+	resolve(path1,path2)	//根据基础路径解析出目标路径的绝对路径
+	relative(path1,path2)	//根据基础路径获取目标路径与其的相对关系
+（5）dns
+	提供了域名到IP地址的双向解析功能
+	lookup()//把一个域名解析为IP地址,从操作系统中查询（缓存），参数1，错误对象，参数2，IP地址，参数3，IPv4&IPv6
+	resolve()//把一个于明天解析为一个DNS记录解析数组，从DNS服务器中查询
+	reverse()//把一个IP地址反向解析为一组域名
+（6）util
+	工具模块
+	format()//使用带占位符的方式格式化字符串
+	inspect()//返回一个对象的字符串形式
+	inherits(Sub,Base)//实现构造函数间的继承
+（7）buffer
+	缓冲区，一块专用于存储数据的内存区域。
+	new Buffer()
+
+（8）fs
+	fs模块提供了文件的读写、更名、删除、遍历目录等你操作
+	所有异步方法回调函数中第一个参数都是一个IO错误对象。
+	fs模块中的四个class
+	fs.stats		//文件或目录的统计信息的描述对象
+	fs.ReadStream	//stream.Readable接口的实现对象
+	fs.WriteStream	//stream.Writable借口的实现对象
+	fs.FSWatcher	//用监视文件修改的文件监视器对象
+	fs模块中的常用方法：
+	fs.mkdir()		//创建目录
+	fs.rmdir()		//删除目录
+	fs.readdir()	//读取目录下的内容
+	fs.readFile	()	//读取文件的内容
+	fs.writeFile()	//向文件中写入内容
+	fs.appendFile()	//向文件中追加内容
+	fs.unlink()		//删除文件
+	fs.rename()	//重命名文件
+
+	fs.stat()		//返回一个文件或目录的统计信息对象（fs.stats对象）
+	fs.stats对象的方法：
+		stats.isFile()	//是否为文件
+		stats.ifDirectory()	//是否为目录
+
+
+
+
+（9）http
+（10）mysql
+
+
+
+
+
+
+	
+
+
+
+
+
+
+

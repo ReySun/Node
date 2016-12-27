@@ -1,0 +1,1 @@
+exports.data="测试package.json"

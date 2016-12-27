@@ -1,0 +1,3 @@
+{
+  "main":"./09-package-hello.js"//main作引入文件用
+}

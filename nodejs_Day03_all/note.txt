@@ -1,0 +1,81 @@
+回顾：
+模块：
+	module（模块）
+	模块的分类：
+	（1）核心模块
+	（2）第三方模块
+	（3）自定义模块
+	Node.js在启动时运行的第一个模块称为“主模块”。
+	获取主模块对象：
+		process.mainModule
+		require.main
+	导出模块中的成员：exports.xx=xx
+	引入一个外部模块：require()
+	判断当前模块是否主模块：
+		module===process.mainModule
+	预定义的模块作用域成员：
+		__dirname  //获取当前模块所在的目录
+		__filename  //获取当前模块所在目录及文件名
+		module      //指向当前模块自己
+		module.exports  //当前模块中待导出的可供其他模块使用的对象
+		exports  //指向module.exports对象的引用
+		require  //引入其他模块
+
+	创建自定义模块：
+	（1）文件模块
+		没有后缀的文件模块，被作为js文本加载
+		.js后缀的文件模块，被作为js文本加载
+		.json后缀的文件模块，被作为json字符串加载，自动解析为对象
+		.node后缀的文件模块，被作为C/C++二进制加载
+	（2）目录模块
+		包含package.json文件目录
+		包含index.js的文件
+		包含index.json的文件
+		包含index.node的文件
+包
+	目录、package.json、lib/.js、bin/.node、doc/.doc、test/test.html
+	
+npm——包管理器
+	用于下载、安装、升级、删除、发布、维护。
+	安装包：npm install 包名
+		npm install 包名 -g
+	更新包：npm update 包名
+	删除包：npm uninstall 包名
+	列出安装的包：npm ls
+	生成包：npm init
+	发布包：npm adduser  登录/注册
+		npm publish 发布
+核心模块
+	console
+		console.Console(out,err)//向任意指定的输出流（文件）中输出数据
+	querystring
+		parse()
+		stringify()
+	url
+		parse()
+		format()
+	path
+		parse()
+		format()
+		resolve(url1,url2)
+		relative(url1,url2)
+	DNS
+		lookup()
+		resolve()
+		reverse()
+	Util
+		format()
+		inspect()
+		inherits()
+	Buffer
+		new Buffer(32);
+
+
+
+
+
+
+
+
+
+	test stringtest string

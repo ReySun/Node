@@ -1,159 +1,159 @@
-º«ÏòÁÕ
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 hanxl@tedu.cn
 
-1¡¢Node.js¸ÅÊö
-	Node.jsÊÇÒ»¸ö»ùÓÚV8ÒýÇæµÄjsÔËÐÐÊ±»·¾³¡£¡ª¡ª½âÊÍÆ÷
-	Node.jsÊÇÒ»ÃÅ·þÎñÆ÷¶ËÓïÑÔ£¬»ùÓÚECMAScript,Ìá¹©ÁËºÜ¶à£¨Ç°¶ËµÄjsÓïÑÔÖÐÃ»ÓÐµÄ£©À©Õ¹¶ÔÏó¡£¡ª¡ª·þÎñÆ÷¶ËÓïÑÔ
-	Node.js¿ÉÒÔ±àÐ´¶ÀÁ¢µÄweb·þÎñÆ÷£¬ÎÞÐè½èÖúÓÚÈÎºÎÆäËûµÄweb·þÎñÆ÷¡£¡ª¡ªweb·þÎñÆ÷
-	Node.jsºÍV8µÄÇø±ð£º
-	Ç°¶ËJavascript£º
-		£¨1£©ESÔ­Éú¶ÔÏó£ºString¡¢Date¡¢Number¡¢Array¡¢Boolean¡¢Error¡¢Function¡¢Object¡£¡£¡£
-		£¨2£©BOM&DOM¶ÔÏó£ºwindow¡¢document¡£¡£¡£
-		£¨3£©×Ô¶¨Òå¶ÔÏó
+1ï¿½ï¿½Node.jsï¿½ï¿½ï¿½ï¿½
+	Node.jsï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½V8ï¿½ï¿½ï¿½ï¿½ï¿½jsï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Node.jsï¿½ï¿½Ò»ï¿½Å·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ECMAScript,ï¿½á¹©ï¿½ËºÜ¶à£¨Ç°ï¿½Ëµï¿½jsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ÐµÄ£ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ó¡£¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Node.jsï¿½ï¿½ï¿½Ô±ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½webï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½webï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½webï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Node.jsï¿½ï¿½V8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Ç°ï¿½ï¿½Javascriptæ–¯è’‚èŠ¬vsefï¿½ï¿½
+		ï¿½ï¿½1ï¿½ï¿½ESÔ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Stringï¿½ï¿½Dateï¿½ï¿½Numberï¿½ï¿½Arrayï¿½ï¿½Booleanï¿½ï¿½Errorï¿½ï¿½Functionï¿½ï¿½Objectï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½2ï¿½ï¿½BOM&DOMï¿½ï¿½ï¿½ï¿½windowï¿½ï¿½documentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½3ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-	Node.js£º
-		£¨1£©ESÔ­Éú¶ÔÏó
-		£¨2£©À©Õ¹ºËÐÄ¶ÔÏóºÍ´óÁ¿µÚÈý·½¶ÔÏó
-		£¨3£©×Ô¶¨Òå¶ÔÏó
-	Node.jsÖÐÃ»ÓÐBOMºÍDOM¶ÔÏó
+	Node.jsï¿½ï¿½
+		ï¿½ï¿½1ï¿½ï¿½ESÔ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½3ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Node.jsï¿½ï¿½Ã»ï¿½ï¿½BOMï¿½ï¿½DOMï¿½ï¿½ï¿½ï¿½
 
-	Node.jsµÄÒâÒå£º
-		£¨1£©Ö´ÐÐÐ§ÂÊ±ÈPHP/JSP/ASPX¶¼Òª¸ß
-		£¨2£©Ê¹ÓÃÒ»ÖÖÓïÑÔÍ³Ò»ÁËÇ°ºó¶Ë ¿ª·¢
+	Node.jsï¿½ï¿½ï¿½ï¿½ï¿½å£º
+		ï¿½ï¿½1ï¿½ï¿½Ö´ï¿½ï¿½Ð§ï¿½Ê±ï¿½PHP/JSP/ASPXï¿½ï¿½Òªï¿½ï¿½
+		ï¿½ï¿½2ï¿½ï¿½Ê¹ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³Ò»ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
-	È«Õ»¹¤³ÌÊ¦
-	ÌØµã£º
-	£¨1£©µ¥Ïß³ÌÂß¼­´¦Àí
-	£¨2£©·Ç×èÈû	
-	£¨3£©Òì²½I/O´¦Àí
-	£¨4£©ÊÂ¼þÇý¶¯±à³Ì
+	È«Õ»ï¿½ï¿½ï¿½ï¿½Ê¦
+	ï¿½Øµã£º
+	ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	
+	ï¿½ï¿½3ï¿½ï¿½ï¿½ì²½I/Oï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½4ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-2¡¢Node.jsµÄÁ½ÖÖÔËÐÐÄ£Ê½
-	£¨1£©½»»¥Ä£Ê½¡ª¡ªÓÃÓÚ²âÊÔ
-	½»»¥Ä£Ê½£¬Node.js×Ô´øµÄÄ£¿éÎÞÐèÒýÈë£¬¿ÉÒÔÖ±½ÓÊ¹ÓÃ
-	Ö´ÐÐ·½·¨£ºnode ½øÈë---ÊäÈëjs´úÂë£¬»Ø³µÖ´ÐÐ
-	£¨2£©½Å±¾Ä£Ê½¡ª¡ªÓÃÓÚ¿ª·¢
-	°ÑÒªÖ´ÐÐµÄËùÓÐjsÓï¾ä±àÐ´ÔÚÒ»¸öjsÎÄ¼þÖÐ£¬Ò»´ÎÐÔÌá½»¸øNode.js½âÊÍÆ÷Ö´ÐÐ¡£¸ÃÎÄ¼þ¿ÉÒÔÊÇ.js½áÎ²µÄ£¬Ò²¿ÉÒÔÃ»ÓÐºó×º
-	ÔÚ½Å±¾Ä£Ê½ÏÂ£¬Ê¹ÓÃNode.js×Ô´øµÄÄ£¿é£¬ÐèÒªrequire()ÒýÈë
-	Ö´ÐÐ·½·¨£ºnode xx/xx/xx.js
+2ï¿½ï¿½Node.jsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+	ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½Node.jsï¿½Ô´ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½Ê¹ï¿½ï¿½
+	Ö´ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½node ï¿½ï¿½ï¿½ï¿½---ï¿½ï¿½ï¿½ï¿½jsï¿½ï¿½ï¿½ë£¬ï¿½Ø³ï¿½Ö´ï¿½ï¿½
+	ï¿½ï¿½2ï¿½ï¿½ï¿½Å±ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½
+	ï¿½ï¿½ÒªÖ´ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½jsï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ò»ï¿½ï¿½jsï¿½Ä¼ï¿½ï¿½Ð£ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½á½»ï¿½ï¿½Node.jsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.jsï¿½ï¿½Î²ï¿½Ä£ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ðºï¿½×º
+	ï¿½Ú½Å±ï¿½Ä£Ê½ï¿½Â£ï¿½Ê¹ï¿½ï¿½Node.jsï¿½Ô´ï¿½ï¿½ï¿½Ä£ï¿½é£¬ï¿½ï¿½Òªrequire()ï¿½ï¿½ï¿½ï¿½
+	Ö´ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½node xx/xx/xx.js
 
-3¡¢Node.jsµÄ»ù´¡Óï·¨ºÍES6ÐÂÌØÐÔ
-	1¡¢Êý¾ÝÀàÐÍ
-	£¨1£©Ô­Ê¼ÀàÐÍ
+3ï¿½ï¿½Node.jsï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï·¨ï¿½ï¿½ES6ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½1ï¿½ï¿½Ô­Ê¼ï¿½ï¿½ï¿½ï¿½
 		string  number boolean null undefind
-		Ô­Ê¼ÀàÐÍÊý¾ÝÖ±½Ó¸³Öµ¼´¿É
-	£¨2£©ÒýÓÃÀàÐÍ
-		°üº¬ESÔ­Éú¶ÔÏó¡¢Node.js¶ÔÏó¡¢ÓÃ»§×Ô¶¨Òå¶ÔÏó
-		ÒýÓÃÀàÐÍÊý¾ÝÐèÒªÊ¹ÓÃnew¹Ø¼ü×Ö´´½¨
-	2¡¢Ä£°å×Ö·û´®
-		Ê¹ÓÃ ` ` ·½Ê½¶¨Òå×Ö·û´®£¬Êý¾Ý¿ÉÒÔÊµÏÖ»»ÐÐ£¬²¢ÇÒ¿ÉÒÔÔÚ×Ö·û´®ÖÐÆ´½Ó±äÁ¿£º${±äÁ¿Ãû}£¬Ö´ÐÐÔËËã¡£
+		Ô­Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Ó¸ï¿½Öµï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ESÔ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Node.jsï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊ¹ï¿½ï¿½newï¿½Ø¼ï¿½ï¿½Ö´ï¿½ï¿½ï¿½
+	2ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+		Ê¹ï¿½ï¿½ ` ` ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½Êµï¿½Ö»ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ò¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Æ´ï¿½Ó±ï¿½ï¿½ï¿½ï¿½ï¿½${ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ã¡£
 
-	3¡¢ÑÏ¸ñÄ£Ê½£ºES5ÖÐÐÂÔöµÄ±ÈÆÕÍ¨Ä£Ê½¸ü¼ÓÑÏ¸ñµÄjsÔËÐÐÄ£Ê½¡£¡ª¡ªÈ«ÐÂµÄÄ£Ê½¡£
-	Ê¹ÓÃ·½·¨£º
-	¹æÔò£º
-	£¨1£©ÔÚÕû¸ö½Å±¾ÎÄ¼þÖÐÆôÓÃÑÏ¸ñÄ£Ê½
-		ÔÚ½Å±¾ÎÄ¼þ¿ªÍ·£º"use strict"
-		ºÎÊ±£ºÐÂÏîÄ¿
-	£¨2£©ÔÚµ¥¸öº¯ÊýÄÚÆôÓÃÑÏ¸ñÄ£Ê½
+	3ï¿½ï¿½ï¿½Ï¸ï¿½Ä£Ê½ï¿½ï¿½ES5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Í¨Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½jsï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½Âµï¿½Ä£Ê½ï¿½ï¿½
+	Ê¹ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½Ä£Ê½
+		ï¿½Ú½Å±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Í·ï¿½ï¿½"use strict"
+		ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
+	ï¿½ï¿½2ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½Ä£Ê½
 		function(){
 			"use strict"
 		}
-		ºÎÊ±£ºÀÏÏîÄ¿Ç¨ÒÆ»òÎ¬»¤
-	1¡¢ÐÞ¸Ä³£Á¿µÄÖµ·Ç·¨µÄ¡£
-	2¡¢²»ÔÊÐí¶ÔÎ´ÉùÃ÷µÄ±äÁ¿¸³Öµ
-	3¡¢ÄäÃûº¯ÊýµÄthis²»ÔÙÖ¸ÏòÈ«¾Ö
+		ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Ç¨ï¿½Æ»ï¿½Î¬ï¿½ï¿½
+	1ï¿½ï¿½ï¿½Þ¸Ä³ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ç·ï¿½ï¿½Ä¡ï¿½
+	2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+	3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½thisï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½È«ï¿½ï¿½
 
-	4¡¢±äÁ¿µÄ×÷ÓÃÓò
-	×÷ÓÃÓò£º
-		È«¾Ö×÷ÓÃÓò¡¢
-		¾Ö²¿×÷ÓÃÓò¡¢
-		¿é¼¶×÷ÓÃÓò(ES6×¨ÓÐ)
-	¿é¼¶×÷ÓÃÓò£ºÖ»ÄÜÔÚµ±Ç°µÄ´úÂë¿éÖÐÊ¹ÓÃ
-	´úÂë¿é£ºÈÎºÎÒ»¸ö{}£¨if/for/while£©¶¼ÊÇÒ»¸ö´úÂë¿é£¬Ã¿¸ö´úÂë¿é¾ÍÊÇÒ»¸ö¶ÀÁ¢µÄ×÷ÓÃÓò
-	Ê¹ÓÃ£ºÔÚ´úÂë¿éÊ¹ÓÃletÉùÃ÷±äÁ¿£¬³öÁË´úÂë¿é¾Í²»ÄÜÊ¹ÓÃ¡£
-	5¡¢Ñ­»·½á¹¹
-		for...in...»ñµÃÊý×éµÄÏÂ±ê
-		for...of...ÓÃÓÚ±éÀúÊý¾Ý£¬»ñµÃÊý×éµÄÔªËØÖµ
+	4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½é¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ES6×¨ï¿½ï¿½)
+	ï¿½é¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½Úµï¿½Ç°ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½é£ºï¿½Îºï¿½Ò»ï¿½ï¿½{}ï¿½ï¿½if/for/whileï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Ê¹ï¿½Ã£ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½letï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½Ê¹ï¿½Ã¡ï¿½
+	5ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½á¹¹
+		for...in...ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½
+		for...of...ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Öµ
 	
-	6¡¢º¯Êý
-	ÄäÃûº¯ÊýµÄ×Ôµ÷ÓÃ
-	¼ýÍ·º¯Êý£ºÓÃÓÚÄäÃûº¯Êý
+	6ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½
+	ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	()=>{
 	
 	}
 	var obj=()=>{
 	
 	}
-	7¡¢Ê¹ÓÃclass¹Ø¼ü×Ö´´½¨×Ô¶¨Òå¶ÔÏó¡ª¡ªES6ÐÂÌØÐÔ
-	class	Àà£¬ÊÇÒ»×éÏàËÆ¶ÔÏóµÄÊôÐÔºÍÐÐÎªµÄ³éÏó¼¯ºÏ
-	constructor  ¹¹Ôìº¯Êý¹Ø¼ü×Ö
-	class ÀàÃû{
+	7ï¿½ï¿½Ê¹ï¿½ï¿½classï¿½Ø¼ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ó¡ª¡ï¿½ES6ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	class	ï¿½à£¬ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½Îªï¿½Ä³ï¿½ï¿½ó¼¯ºï¿½
+	constructor  ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½
+	class ï¿½ï¿½ï¿½ï¿½{
 		constructor(){
 		}
-		·½·¨Ãû(){
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(){
 		}
 	}
 
-	¼Ì³Ð£º
-	class ×ÓÀà extends ¸¸Àà{
+	ï¿½Ì³Ð£ï¿½
+	class ï¿½ï¿½ï¿½ï¿½ extends ï¿½ï¿½ï¿½ï¿½{
 		constructor(xx,xx,xx){
-			super(¸¸ÀàµÄÊôÐÔ);
+			super(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½);
 			this.xx=xx;
 		}
-		·½·¨Ãû(){
-			super.¸¸Àà·½·¨Ãû()+...
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(){
+			super.ï¿½ï¿½ï¿½à·½ï¿½ï¿½ï¿½ï¿½()+...
 		}
 	}
-4¡¢Node.jsÖÐÈ«¾Ö¶ÔÏóµÄ³ÉÔ±ÊôÐÔºÍ³ÉÔ±·½·¨
-	ÔÚ½»»¥Ä£Ê½ÏÂ£¬ÉùÃ÷µÄÈ«¾Ö±äÁ¿ºÍº¯Êý£¬ÊÇglobalµÄ³ÉÔ±¡ª¡ªÈ«¾Ö¶ÔÏóÎÛÈ¾
-	ÔÚ½Å±¾Ä£Ê½ÏÂ£¬ÉùÃ÷µÄÈ«¾Ö±äÁ¿ºÍº¯Êý£¬²»ÊÇglobalµÄ³ÉÔ±¡ª¡ª±ÜÃâÁËÈ«¾Ö¶ÔÏóµÄÎÛÈ¾
-	£¨1£©console ÓÃÓÚÏòstdout£¨±ê×¼Êä³ö£©ºÍstderr£¨±ê×¼´íÎó£©ÖÐÊä³öÐÅÏ¢
-	consoleÖÐµÄ³ÉÔ±ÊÇÒì²½µÄ£¬ËùÒÔÊä³öË³ÐòºÍÊéÐ´Ë³Ðò²»Ò»¶¨Ò»ÖÂ¡£
-	console.log()	ÏòstdoutÊä³öÈÕÖ¾ÐÅÏ¢
-	//%°Ù·ÖºÅÕ¼Î»·û£¬Ã¿Ò»¸öÕ¼Î»·û¶¼Ò»Ò»¶ÔÓ¦ºóÃæµÄ¾ßÌåÖµ£¬%s±íÊ¾stringÀàÐÍ£¬%d±íÊ¾ÊÇnumberÀàÐÍ
+4ï¿½ï¿½Node.jsï¿½ï¿½È«ï¿½Ö¶ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ÔºÍ³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+	ï¿½Ú½ï¿½ï¿½ï¿½Ä£Ê½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½globalï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½È«ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½È¾
+	ï¿½Ú½Å±ï¿½Ä£Ê½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½globalï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¾
+	ï¿½ï¿½1ï¿½ï¿½console ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½stdoutï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½stderrï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+	consoleï¿½ÐµÄ³ï¿½Ô±ï¿½ï¿½ï¿½ì²½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½Ð´Ë³ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½Â¡ï¿½
+	console.log()	ï¿½ï¿½stdoutï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½Ï¢
+	//%ï¿½Ù·Öºï¿½Õ¼Î»ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ï¿½Õ¼Î»ï¿½ï¿½ï¿½ï¿½Ò»Ò»ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½Öµï¿½ï¿½%sï¿½ï¿½Ê¾stringï¿½ï¿½ï¿½Í£ï¿½%dï¿½ï¿½Ê¾ï¿½ï¿½numberï¿½ï¿½ï¿½ï¿½
 	console.log('uname:%s,age:%d',user.uname,user.age);
-	console.info()	Ê¹ÓÃ·½·¨ºÍconsole.log()ÏàÍ¬
+	console.info()	Ê¹ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½console.log()ï¿½ï¿½Í¬
 
-	console.error()	ÓÃÓÚÏòstderrÊä³ö´íÎóÐÅÏ¢
+	console.error()	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½stderrï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 	console.warn()
 
-	console.trace()	ÓÃÓÚÏòstderrÊä³öÕ»¹ì¼£ÐÅÏ¢
+	console.trace()	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½stderrï¿½ï¿½ï¿½Õ»ï¿½ì¼£ï¿½ï¿½Ï¢
 	
-	console.dir()	ÓÃÓÚÏòstdoutÊä³öÖ¸¶¨¶ÔÏóµÄ×Ö·û´®±íÊ¾£¬ËüÓëconsole.log()µÄÇø±ð£ºconsole.dir()¿ÉÒÔ´øÒ»Ð©²ÎÊý£¬¶ÔÊä³öµÄÄÚÈÝ½øÐÐÉèÖÃ¡£
-	console.assert()	¶ÏÑÔ£¬ÎªÕæµÄ¶ÏÑÔ£¬´íÎóÐÅÏ¢²»»ØÊä³ö£¬Îª¼ÙµÄ¶ÏÑÔ£¬Å×³öAssertError´íÎó¶ÔÏó£¬Êä³ö´íÎóÐÅÏ¢£¬ÖÕÖ¹½Å±¾Ö´ÐÐ¡££¨´íÎóÐÅÏ¢¿ÉÒÔ×Ô¶¨Òå£©
+	console.dir()	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½stdoutï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½console.log()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½console.dir()ï¿½ï¿½ï¿½Ô´ï¿½Ò»Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
+	console.assert()	ï¿½ï¿½ï¿½Ô£ï¿½Îªï¿½ï¿½Ä¶ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ÙµÄ¶ï¿½ï¿½Ô£ï¿½ï¿½×³ï¿½AssertErrorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½Å±ï¿½Ö´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å£©
 
-	console.time()	//²âÊÔ´úÂëµÄÖ´ÐÐºÄÊ±
+	console.time()	//ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ðºï¿½Ê±
 	console.timeEnd()
 
-	£¨2£©process ½ø³Ì
-	console.log( process.arch )//»ñÈ¡CPU¼Ü¹¹ÀàÐÍ
-	console.log( process.platform )//»ñÈ¡²Ù×÷ÏµÍ³ÀàÐÍ
-	console.log( process.env )//»ñÈ¡²Ù×÷ÏµÍ³»·¾³±äÁ¿
+	ï¿½ï¿½2ï¿½ï¿½process ï¿½ï¿½ï¿½ï¿½
+	console.log( process.arch )//ï¿½ï¿½È¡CPUï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½
+	console.log( process.platform )//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½
+	console.log( process.env )//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	console.log( process.cwd() )//»ñÈ¡µ±Ç°ËùÔÚ¹¤×÷Ä¿Â¼
-	console.log( process.execPath )//»ñÈ¡½âÊÍÆ÷ËùÔÚÄ¿Â¼
-	console.log( process.versions )//»ñÈ¡Node.js°æ±¾ÐÅÏ¢
-	console.log( process.uptime() )//»ñÈ¡Node.js½âÊÍÆ÷ÔËÐÐÊ±¼ä(s)
-	console.log( process.memoryUsage())//»ñÈ¡ÄÚ´æÐÅÏ¢
+	console.log( process.cwd() )//ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ú¹ï¿½ï¿½ï¿½Ä¿Â¼
+	console.log( process.execPath )//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
+	console.log( process.versions )//ï¿½ï¿½È¡Node.jsï¿½æ±¾ï¿½ï¿½Ï¢
+	console.log( process.uptime() )//ï¿½ï¿½È¡Node.jsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½(s)
+	console.log( process.memoryUsage())//ï¿½ï¿½È¡ï¿½Ú´ï¿½ï¿½ï¿½Ï¢
 
-	console.log( process.pid )//»ñÈ¡½ø³ÌIDºÅ
-	process.kill( pid )//ÏòÖ¸¶¨½ø³ÌIDºÅ·¢ËÍÍË³öÐÅºÅ
+	console.log( process.pid )//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½
+	process.kill( pid )//ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IDï¿½Å·ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½Åºï¿½
 
-	£¨3£©¶¨Ê±Æ÷
-	global.setTimeout( )£ºÒ»´ÎÐÔ¶¨Ê±Æ÷
-	global.setInterval( )£ºÖÜÆÚÐÔ¶¨Ê±Æ÷
-	process.nextTick( ): ±¾´ÎÊÂ¼þÑ­»·½áÊøÊ±Á¢¼´Ö´ÐÐµÄ¶¨Ê±Æ÷
-	global.setImmediate( )£ºÏÂ´ÎÊÂ¼þÑ­»·Á¢¼´Ö´ÐÐµÄ¶¨Ê±Æ÷
+	ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+	global.setTimeout( )ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ô¶ï¿½Ê±ï¿½ï¿½
+	global.setInterval( )ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ê±ï¿½ï¿½
+	process.nextTick( ): ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ÐµÄ¶ï¿½Ê±ï¿½ï¿½
+	global.setImmediate( )ï¿½ï¿½ï¿½Â´ï¿½ï¿½Â¼ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ÐµÄ¶ï¿½Ê±ï¿½ï¿½
 
-5¡¢Ä£¿é
-	Node.jsÖÐÊ¹ÓÃ¡°Ä£¿é¡±À´¹æ»®²»Í¬µÄ¹¦ÄÜ¶ÔÏó£¬ÀàËÆÆäËûÓïÑÔÖÐµÄ¡°package(°ü)¡±»òÕß¡°namespace(Ãû³Æ¿Õ¼ä)¡±¡£
-	Ã¿Ò»¸ö.jsÎÄ¼þ¶ÔÓ¦Ò»¸öÄ£¿é¶ÔÏó£¬°üº¬ÏàÓ¦µÄ¹¦ÄÜºÍº¯Êý¡£
-	ÒýÈëÒ»¸öÄ£¿é£ºrequire('');
-	µ¼³öÒ»¸öÄ£¿é£ºexports.xx=xx;
-	Ä£¿éµÄ·ÖÀà
-	£¨1£©ºËÐÄÄ£¿é
-	£¨2£©µÚÈý·½Ä£¿é
-	£¨3£©×Ô¶¨ÒåÄ£¿é
+5ï¿½ï¿½Ä£ï¿½ï¿½
+	Node.jsï¿½ï¿½Ê¹ï¿½Ã¡ï¿½Ä£ï¿½é¡±ï¿½ï¿½ï¿½æ»®ï¿½ï¿½Í¬ï¿½Ä¹ï¿½ï¿½Ü¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¡ï¿½package(ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ß¡ï¿½namespace(ï¿½ï¿½ï¿½Æ¿Õ¼ï¿½)ï¿½ï¿½ï¿½ï¿½
+	Ã¿Ò»ï¿½ï¿½.jsï¿½Ä¼ï¿½ï¿½ï¿½Ó¦Ò»ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ó£¬°ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ä¹ï¿½ï¿½ÜºÍºï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ä£ï¿½é£ºrequire('');
+	ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ä£ï¿½é£ºexports.xx=xx;
+	Ä£ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+	ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+	ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+	ï¿½ï¿½3ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
 
 
 	
